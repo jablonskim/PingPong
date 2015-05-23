@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong", "PingPong\PingPong.csproj", "{FE031BC9-9D89-4E32-8101-FEC643CC9DF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputGenerator", "InputGenerator\InputGenerator.csproj", "{7A71ED25-549E-4CCC-92B6-D3BAF11C55B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE031BC9-9D89-4E32-8101-FEC643CC9DF0}.Debug|x86.ActiveCfg = Debug|x86
+		{FE031BC9-9D89-4E32-8101-FEC643CC9DF0}.Debug|x86.Build.0 = Debug|x86
+		{FE031BC9-9D89-4E32-8101-FEC643CC9DF0}.Release|x86.ActiveCfg = Release|x86
+		{FE031BC9-9D89-4E32-8101-FEC643CC9DF0}.Release|x86.Build.0 = Release|x86
+		{7A71ED25-549E-4CCC-92B6-D3BAF11C55B8}.Debug|x86.ActiveCfg = Debug|x86
+		{7A71ED25-549E-4CCC-92B6-D3BAF11C55B8}.Debug|x86.Build.0 = Debug|x86
+		{7A71ED25-549E-4CCC-92B6-D3BAF11C55B8}.Release|x86.ActiveCfg = Release|x86
+		{7A71ED25-549E-4CCC-92B6-D3BAF11C55B8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
