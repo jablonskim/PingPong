@@ -7,14 +7,14 @@ using System.IO;
 
 namespace PingPong
 {
-    class PingPong
+    public class PingPongSolver
     {
         string in_file;
         string out_file;
         int[][,] matrix;
         int n;
 
-        public PingPong(string input, string output)
+        public PingPongSolver(string input, string output)
         {
             in_file = input;
             out_file = output;
@@ -126,10 +126,7 @@ namespace PingPong
         {
             try
             {
-                int[,] IN = ReadInput();
-                Create3D(IN);
-                Strassen.Multiply(matrix);
-                List<int> r = FindSolution();
+                List<int> r = Solve();
                 SaveResults(r);
             }
             catch (Exception e)
@@ -139,6 +136,15 @@ namespace PingPong
             }
 
             return true;
+        }
+
+        public List<int> Solve()
+        {
+            int[,] IN = ReadInput();
+            Create3D(IN);
+            Strassen.Multiply(matrix);
+            List<int> r = FindSolution();
+            return r;
         }
     }
 
@@ -152,7 +158,7 @@ namespace PingPong
                 return;
             }
 
-            PingPong pong = new PingPong(args[0], args[1]);
+            PingPongSolver pong = new PingPongSolver(args[0], args[1]);
             pong.Run();
         }
     }
